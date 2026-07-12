@@ -1,0 +1,33 @@
+# Secrets — never tracked
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials*
+*_token*
+.hf_token
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# CUDA / C++ build artifacts
+*.o
+*.so
+*.out
+va
+vector_add
+!*.cu
+
+# Profiler / benchmark outputs (raw dumps; curated results get committed deliberately)
+*.nsys-rep
+*.ncu-rep
+*.sqlite
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
