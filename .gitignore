@@ -21,6 +21,9 @@ venv/
 va
 vector_add
 !*.cu
+build/
+cmake-build-*/
+CMakeUserPresets.json
 
 # Profiler / benchmark outputs (raw dumps; curated results get committed deliberately)
 *.nsys-rep

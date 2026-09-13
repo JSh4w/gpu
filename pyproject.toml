@@ -1,0 +1,27 @@
+[project]
+name = "gpu"
+version = "0.1.0"
+description = "Local GPU/CUDA kernel dev + model download/train experimentation; heavy runs go to RunPod"
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "transformers",
+    "accelerate",
+    "datasets",
+    "huggingface-hub[cli]",
+    "safetensors",
+    "sentencepiece",
+    "numpy",
+    "nvitop",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu130" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
